@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ServeScape Map Zoom</title>
+	<style>
+		body{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		img{
+			border: 1px solid;
+		}
+		img:hover{
+			cursor: grab;
+		}
+	</style>
+</head>
+<body>
+	<img class='zoom' src='servescape-expansion.png' alt='Delivery Area Map'  height='820'/>
+	<script src="wheelzoom.js"></script>
+	<script>
+		wheelzoom(document.querySelector('img.zoom'));
+	</script>
+</body>
+</html>
